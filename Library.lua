@@ -1,7 +1,7 @@
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Arcadian420/Services/main/lua.lua'))()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Arcadian420/UiComponents/main/Components.lua'))()
 
-local MainLibrary = {}
+MainLibrary = {}
 
 function MainLibrary:CreateMain(text)
     local Quantum = Instance.new("ScreenGui")
@@ -85,7 +85,7 @@ Container.Size = UDim2.new(0, 312, 0, 290)
 Containers.Name = "Containers"
 Containers.Parent = Container
 
-local Library = {}
+Library = {}
 
 function Library:CreateTab(text)
     local TabButton = Instance.new("TextButton")
@@ -151,7 +151,6 @@ TabButton.MouseButton1Click:Connect(function()
 v.Visible = false
     end
     Container2.Visible = true
-    print(Container2.Name)
 end)
 end
 return Library
