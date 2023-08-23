@@ -106,14 +106,15 @@ TabButton.Font = Enum.Font.SourceSans
 TabButton.Text = ""
 TabButton.TextColor3 = Color3.new(0, 0, 0)
 TabButton.TextSize = 14
+TabButton.AutoButtonColor = false
 CreateUIGradient(TabButton)
 
 Frame_2.Parent = TabButton
 Frame_2.BackgroundColor3 = Color3.new(0.380392, 0.380392, 0.388235)
 Frame_2.BorderColor3 = Color3.new(0, 0, 0)
 Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(0.0340000018, 0, 0.100000001, 0)
-Frame_2.Size = UDim2.new(0, 3, 0, 17)
+Frame_2.Position = UDim2.new(0.0350000001, 0, 0.100000001, 0)
+Frame_2.Size = UDim2.new(0, 2, 0, 17)
 
 TextLabel_2.Parent = TabButton
 TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
