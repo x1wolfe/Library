@@ -150,6 +150,14 @@ TabButton.MouseButton1Click:Connect(function()
     for i,v in next, Containers:GetChildren() do
 v.Visible = false
     end
+    for i,v in pairs(Tabs:GetChildren()) do
+        if v:IsA("TextButton") then
+        v.TextLabel.TextColor3 = Color3.fromRGB(97, 97, 99)
+        v.Frame.BackgroundColor3 = Color3.fromRGB(97, 97, 99)
+        end
+end
+    TextLabel_2.TextColor3 = Color3.fromRGB(114, 114, 198)
+    Frame_2.BackgroundColor3 = Color3.fromRGB(114, 114, 198)
     Container2.Visible = true
 end)
 end
