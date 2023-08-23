@@ -1,3 +1,4 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Arcadian420/Services/main/lua.lua'))()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Arcadian420/UiComponents/main/Components.lua'))()
 
 local MainLibrary = {}
@@ -31,6 +32,8 @@ TopBar.BorderColor3 = Color3.new(0.145098, 0.145098, 0.172549)
 TopBar.Position = UDim2.new(0.0148103079, 0, 0.0227917694, 0)
 TopBar.Size = UDim2.new(0, 466, 0, 26)
 
+MakeDraggable(TopBar)
+
 TextLabel.Parent = TopBar
 TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
 TextLabel.BackgroundTransparency = 1
@@ -52,8 +55,6 @@ UnderLine.BorderColor3 = Color3.new(0, 0, 0)
 UnderLine.BorderSizePixel = 0
 UnderLine.Position = UDim2.new(0, 0, 1, 0)
 UnderLine.Size = UDim2.new(0, 466, 0, 2)
-
-CreateUnderLine(UnderLine)
 
 Tabs.Name = "Tabs"
 Tabs.Parent = Frame
