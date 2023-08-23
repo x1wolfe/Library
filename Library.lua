@@ -25,14 +25,14 @@ Frame.BorderColor3 = Color3.new(0.141176, 0.180392, 0.27451)
 Frame.Position = UDim2.new(0.435081691, 0, 0.345070422, 0)
 Frame.Size = UDim2.new(0, 480, 0, 339)
 
+MakeDraggable(Frame)
+
 TopBar.Name = "TopBar"
 TopBar.Parent = Frame
 TopBar.BackgroundColor3 = Color3.new(0.0313726, 0.0313726, 0.0313726)
 TopBar.BorderColor3 = Color3.new(0.145098, 0.145098, 0.172549)
 TopBar.Position = UDim2.new(0.0148103079, 0, 0.0227917694, 0)
 TopBar.Size = UDim2.new(0, 466, 0, 26)
-
-MakeDraggable(TopBar)
 
 TextLabel.Parent = TopBar
 TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
