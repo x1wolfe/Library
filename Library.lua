@@ -56,6 +56,8 @@ UnderLine.BorderSizePixel = 0
 UnderLine.Position = UDim2.new(0, 0, 1, 0)
 UnderLine.Size = UDim2.new(0, 466, 0, 2)
 
+CreateUnderLine(UnderLine)
+
 Tabs.Name = "Tabs"
 Tabs.Parent = Frame
 Tabs.Active = true
