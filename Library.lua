@@ -155,10 +155,3 @@ end)
 end
 return Library
 end
-
-local Main = MainLibrary:CreateMain("hewwo")
-Main:CreateTab("Tab1")
-Main:CreateTab("Tab2")
-Main:CreateTab("Tab3")
-Main:CreateTab("Tab4")
-Main:CreateTab("Tab5")
