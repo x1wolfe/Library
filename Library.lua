@@ -1,6 +1,3 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Arcadian420/Services/main/lua.lua'))()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Arcadian420/UiComponents/main/Components.lua'))()
-
 MainLibrary = {}
 
 function MainLibrary:CreateMain(text)
@@ -140,6 +137,7 @@ Container2.Size = UDim2.new(0, 312, 0, 290)
 Container2.ScrollBarThickness = 2
 Container2.BorderSizePixel = 1
 Container2.ScrollBarImageTransparency = 1
+Container2.Visible = false
 
 UIListLayout.Parent = Container2
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
@@ -158,10 +156,27 @@ v.Visible = false
         v.Frame.BackgroundColor3 = Color3.fromRGB(97, 97, 99)
         end
 end
-    TextLabel_2.TextColor3 = Color3.fromRGB(113, 110, 173)
-    Frame_2.BackgroundColor3 = Color3.fromRGB(113, 110, 173)
+TweenService:Create(TextLabel_2, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(113, 110, 173)}):Play()
+   TweenService:Create(Frame_2, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(113, 110, 173)}):Play()
     Container2.Visible = true
 end)
+function Library:CreateTextLabel(container,text)
+    local TextLabel = Instance.new("TextLabel")
+     
+    TextLabel.Parent = Containers:FindFirstChild(container.."Container")
+    TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+    TextLabel.BackgroundTransparency = 1
+    TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+    TextLabel.BorderSizePixel = 0
+    TextLabel.Position = UDim2.new(0, 0, 0.0070174369, 0)
+    TextLabel.Size = UDim2.new(0, 135, 0, 28)
+    TextLabel.Font = Enum.Font.ArialBold
+    TextLabel.Text = text
+    TextLabel.Name = text.."TextLabel"
+    TextLabel.TextColor3 = Color3.new(0.666667, 0.666667, 0.686275)
+    TextLabel.TextSize = 14
+    TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+    end
 end
 return Library
 end
