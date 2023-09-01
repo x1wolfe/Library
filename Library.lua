@@ -143,7 +143,7 @@ UIListLayout.Parent = Container2
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 
 UIPadding.Parent = Container2
-UIPadding.PaddingLeft = UDim.new(0, 5)
+UIPadding.PaddingLeft = UDim.new(0, 10)
 UIPadding.PaddingTop = UDim.new(0, 5)
 
 TabButton.MouseButton1Click:Connect(function()
