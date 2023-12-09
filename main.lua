@@ -1,3 +1,14 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Arcadian420/Library/main/main.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Arcadian420/Services/main/main.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Arcadian420/esp/main/main.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Arcadian420/UiComponents/main/main.lua'))()
+
+local Main = MainLibrary:CreateMain(GetGameName())
+
+Library:CreateTab("Aim")
+Library:CreateTextLabel("Aim","Test")
+
+
 MainLibrary = {}
 
 function MainLibrary:CreateMain(text)
@@ -176,6 +187,36 @@ function Library:CreateTextLabel(container,text)
     TextLabel.TextColor3 = Color3.new(0.666667, 0.666667, 0.686275)
     TextLabel.TextSize = 14
     TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+    end      
+    function Library:CreateToggle(container,text)
+        local Toggle = Instance.new("TextButton")
+        local TextLabel = Instance.new("TextLabel")
+         
+        Toggle.Name = text.."Toggle"
+        Toggle.Parent = Containers:FindFirstChild(container.."Container")
+        Toggle.BackgroundColor3 = Color3.new(0.380392, 0.380392, 0.388235)
+        Toggle.BorderColor3 = Color3.new(0, 0, 0)
+        Toggle.BorderSizePixel = 0
+        Toggle.Position = UDim2.new(0, 0, 0.0982457176, 0)
+        Toggle.Size = UDim2.new(0, 8, 0, 8)
+        Toggle.AutoButtonColor = false
+        Toggle.Font = Enum.Font.SourceSans
+        Toggle.Text = ""
+        Toggle.TextColor3 = Color3.new(0, 0, 0)
+        Toggle.TextSize = 14
+        
+        TextLabel.Parent = Toggle
+        TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+        TextLabel.BackgroundTransparency = 1
+        TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+        TextLabel.BorderSizePixel = 0
+        TextLabel.Position = UDim2.new(1.83299994, 0, -0.224999994, 0)
+        TextLabel.Size = UDim2.new(0, 135, 0, 12)
+        TextLabel.Font = Enum.Font.ArialBold
+        TextLabel.Text = text
+        TextLabel.TextColor3 = Color3.new(0.380392, 0.380392, 0.388235)
+        TextLabel.TextSize = 14
+        TextLabel.TextXAlignment = Enum.TextXAlignment.Left
     end
 end
 return Library
