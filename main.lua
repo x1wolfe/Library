@@ -1,14 +1,3 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Arcadian420/Library/main/main.lua'))()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Arcadian420/Services/main/main.lua'))()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Arcadian420/esp/main/main.lua'))()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Arcadian420/UiComponents/main/main.lua'))()
-
-local Main = MainLibrary:CreateMain(GetGameName())
-
-Library:CreateTab("Aim")
-Library:CreateTextLabel("Aim","Test")
-
-
 MainLibrary = {}
 
 function MainLibrary:CreateMain(text)
