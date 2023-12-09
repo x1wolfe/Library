@@ -71,7 +71,7 @@ UIPadding.PaddingTop = UDim.new(0, 5)
 
 UIListLayout.Parent = Tabs
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout.Padding = UDim.new(0, 10)
+UIListLayout.Padding = UDim.new(0, 4)
 
 Container.Name = "Container"
 Container.Parent = Frame
@@ -140,6 +140,7 @@ Container2.ScrollBarImageTransparency = 1
 Container2.Visible = false
 
 UIListLayout.Parent = Container2
+UIListLayout.Padding = UDim.new(0, 10)
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 
 UIPadding.Parent = Container2
