@@ -71,7 +71,7 @@ UIPadding.PaddingTop = UDim.new(0, 5)
 
 UIListLayout.Parent = Tabs
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout.Padding = UDim.new(0, 4)
+UIListLayout.Padding = UDim.new(0, 10)
 
 Container.Name = "Container"
 Container.Parent = Frame
@@ -169,7 +169,7 @@ function Library:CreateTextLabel(container,text)
     TextLabel.BorderColor3 = Color3.new(0, 0, 0)
     TextLabel.BorderSizePixel = 0
     TextLabel.Position = UDim2.new(0, 0, 0.0070174369, 0)
-    TextLabel.Size = UDim2.new(0, 135, 0, 28)
+    TextLabel.Size = UDim2.new(0, 135, 0, 19)
     TextLabel.Font = Enum.Font.ArialBold
     TextLabel.Text = text
     TextLabel.Name = text.."TextLabel"
