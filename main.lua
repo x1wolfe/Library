@@ -68,6 +68,7 @@ Tabs.ScrollBarImageTransparency = 1
 
 UIPadding.Parent = Tabs
 UIPadding.PaddingTop = UDim.new(0, 5)
+UIPadding.PaddingLeft = UDim.new(0, 4)
 
 UIListLayout.Parent = Tabs
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
