@@ -221,7 +221,8 @@ else
     TweenService:Create(Toggle, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(97, 97, 99)}):Play()
     TweenService:Create(TextLabel, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(97, 97, 99)}):Play()
         end
-    end
+    end)
+end
 end
 return Library
 end
