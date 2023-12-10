@@ -180,7 +180,7 @@ function Library:CreateTextLabel(container,text)
     end      
     function Library:CreateToggle(container,text,default,callback)
         default = default or false
-        if not typ(default) == "boolean" then default = false end
+        if not type(default) == "boolean" then default = false end
         callback = callback or function() end
         if not type(callback) == "function" then callback = function() end end
 
