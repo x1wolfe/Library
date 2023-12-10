@@ -178,10 +178,14 @@ function Library:CreateTextLabel(container,text)
     TextLabel.TextSize = 14
     TextLabel.TextXAlignment = Enum.TextXAlignment.Left
     end      
-    function Library:CreateToggle(container,text)
+    function Library:CreateToggle(container,text,default,callback)
+        default = default or false
+        if not typ(default) == "boolean" then default = false end
+        callback = callback or function() end
+        if not type(callback) == "function" then callback = function() end end
+
         local Toggle = Instance.new("TextButton")
         local TextLabel = Instance.new("TextLabel")
-        local bool = false
          
         Toggle.Name = text.."Toggle"
         Toggle.Parent = Containers:FindFirstChild(container.."Container")
@@ -210,14 +214,14 @@ function Library:CreateTextLabel(container,text)
         TextLabel.TextXAlignment = Enum.TextXAlignment.Left
 
         Toggle.MouseButton1Click:Connect(function()
-if bool == false then
-    bool = true
-
+if default == false then
+    default = true
+    pcall(callback,true)
     TweenService:Create(Toggle, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(113, 110, 173)}):Play()
     TweenService:Create(TextLabel, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(170, 170, 175)}):Play()
 else
-    bool = false
-
+    default = false
+    pcall(callback,false)
     TweenService:Create(Toggle, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(97, 97, 99)}):Play()
     TweenService:Create(TextLabel, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(97, 97, 99)}):Play()
         end
