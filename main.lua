@@ -87,7 +87,7 @@ Containers.Parent = Container
 Library = {}
 
 function Library:CreateTab(text)
-    local TabButton = Instance.new("TextButton")
+local TabButton = Instance.new("TextButton")
 local Frame_2 = Instance.new("Frame")
 local TextLabel_2 = Instance.new("TextLabel")
 local Container2 = Instance.new("ScrollingFrame")
@@ -158,8 +158,8 @@ v.Visible = false
         v.Frame.BackgroundColor3 = Color3.fromRGB(97, 97, 99)
         end
 end
-TweenService:Create(TextLabel_2, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(113, 110, 173)}):Play()
-   TweenService:Create(Frame_2, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(113, 110, 173)}):Play()
+    TweenService:Create(TextLabel_2, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(113, 110, 173)}):Play()
+    TweenService:Create(Frame_2, TweenInfo.new(0.2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(113, 110, 173)}):Play()
     Container2.Visible = true
 end)
 function Library:CreateTextLabel(container,text)
