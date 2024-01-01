@@ -15,6 +15,7 @@ function MainLibrary:CreateMain(text)
 Quantum.Name = "Quantum"
 Quantum.Parent = game.CoreGui
 Quantum.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+MakeToggle(Quantum)
 
 Frame.Parent = Quantum
 Frame.BackgroundColor3 = Color3.new(0.027451, 0.027451, 0.0235294)
